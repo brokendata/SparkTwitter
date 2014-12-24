@@ -2,3 +2,10 @@ src/main/.idea
 src/main/twitter.txt
 project
 target
+# Intellij
+.idea/
+*.iml
+*.iws
+.idea_modules/
+.gitignore
+target/

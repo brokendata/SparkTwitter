@@ -23,6 +23,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../../target/scala-2.10/resource_managed/test" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -77,8 +78,6 @@
     <orderEntry type="library" name="SBT: org.apache.spark:spark-core_2.10:1.1.0" level="project" />
     <orderEntry type="library" name="SBT: org.apache.spark:spark-streaming_2.10:1.1.0" level="project" />
     <orderEntry type="library" name="SBT: org.apache.zookeeper:zookeeper:3.4.5" level="project" />
-    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-core-asl:1.8.8" level="project" />
-    <orderEntry type="library" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.8.8" level="project" />
     <orderEntry type="library" name="SBT: org.eclipse.jetty:jetty-continuation:8.1.14.v20131031" level="project" />
     <orderEntry type="library" name="SBT: org.eclipse.jetty:jetty-http:8.1.14.v20131031" level="project" />
     <orderEntry type="library" name="SBT: org.eclipse.jetty:jetty-io:8.1.14.v20131031" level="project" />
@@ -118,8 +117,34 @@
     <orderEntry type="library" name="SBT: oro:oro:2.0.8" level="project" />
     <orderEntry type="library" name="SBT: xmlenc:xmlenc:0.52" level="project" />
     <orderEntry type="library" name="SBT: org.apache.spark:spark-streaming-twitter_2.10:1.1.0" level="project" />
-    <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-core:3.0.3" level="project" />
     <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-stream:3.0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.github.fommil.netlib:core:1.1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.github.rwl:jtransforms:2.4.0" level="project" />
+    <orderEntry type="library" name="SBT: com.google.code.gson:gson:2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-column:1.4.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-common:1.4.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-encoding:1.4.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-format:2.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-generator:1.4.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-hadoop:1.4.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: com.twitter:parquet-jackson:1.4.3" level="project" />
+    <orderEntry type="library" name="SBT: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: net.sf.opencsv:opencsv:2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: net.sourceforge.f2j:arpack_combined_all:0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.apache.spark:spark-catalyst_2.10:1.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.apache.spark:spark-mllib_2.10:1.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.apache.spark:spark-sql_2.10:1.1.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="SBT: org.codehaus.jackson:jackson-core-asl:1.8.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.codehaus.jackson:jackson-core-asl:1.9.11" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.8.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.codehaus.jackson:jackson-mapper-asl:1.9.11" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.jblas:jblas:1.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scalamacros:quasiquotes_2.10:2.0.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scalanlp:breeze-macros_2.10:0.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.scalanlp:breeze_2.10:0.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.spire-math:spire-macros_2.10:0.7.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="SBT: org.spire-math:spire_2.10:0.7.4" level="project" />
+    <orderEntry type="library" name="SBT: org.twitter4j:twitter4j-core:3.0.5" level="project" />
   </component>
 </module>
 

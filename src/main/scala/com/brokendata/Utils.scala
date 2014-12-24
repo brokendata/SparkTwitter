@@ -16,6 +16,8 @@ import org.apache.log4j.Level
 import sys.process.stringSeqToProcess
 import twitter4j.auth.OAuthAuthorization
 import twitter4j.conf.ConfigurationBuilder
+import org.apache.spark.Logging
+import org.apache.log4j.{Level, Logger}
 
 object Utils {
   Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
@@ -39,14 +41,25 @@ object Utils {
       (splits(0).trim(), splits(1).trim())
     })
 
-    pairs.map(x => {
-      System.setProperty("twitter4j.oauth" + x._1, x._2)
+    pairs.foreach(x => {
+      System.setProperty("twitter4j.oauth."+ x._1, x._2)
     })
+
+    Some(new OAuthAuthorization(new ConfigurationBuilder().build()))
   }
 
     def getAuth = {
       Some(new OAuthAuthorization(new ConfigurationBuilder().build()))
     }
+
+  def setStreamingLogLevels() {
+    val log4jInitialized = Logger.getRootLogger.getAllAppenders.hasMoreElements
+    if (!log4jInitialized) {
+      // We first log something to initialize Spark's default logging, then we override the
+      // logging level.
+      Logger.getRootLogger.setLevel(Level.WARN)
+    }
+  }
 
 
 }
